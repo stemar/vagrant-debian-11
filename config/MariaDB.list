@@ -1,0 +1,3 @@
+# https://mariadb.org/download/
+deb [arch=amd64,i386,arm64,ppc64el] https://mirror.rackspace.com/mariadb/repo/10.6/debian bullseye main
+deb-src https://mirror.rackspace.com/mariadb/repo/10.6/debian bullseye main
