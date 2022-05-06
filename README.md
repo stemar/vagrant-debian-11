@@ -10,6 +10,10 @@ Make a Vagrant box with Debian 11 LAMP stack, plus configure it for development.
 
 ---
 
+## Details
+
+Read [Stemar Vagrant boxes](https://stemar.github.io/vagrant).
+
 ## Summary
 
 VM = virtual machine
