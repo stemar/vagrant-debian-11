@@ -38,7 +38,7 @@ echo '==> Installing MariaDB'
 
 DEBIAN_FRONTEND=noninteractive apt-get -q=2 install mariadb-server &>/dev/null
 
-echo '==> Setting PHP 8.1 repository'
+echo '==> Setting PHP 8.2 repository'
 
 apt-get -q=2 install apt-transport-https &>/dev/null
 curl -sSLo /usr/share/keyrings/deb.sury.org-php.gpg https://packages.sury.org/php/apt.gpg
@@ -47,13 +47,13 @@ apt-get -q=2 update
 
 echo '==> Installing PHP'
 
-apt-get -q=2 install php8.1 php-pear php8.1-cli libapache2-mod-php8.1 libphp8.1-embed \
-    php8.1-bcmath php8.1-bz2 php8.1-curl php8.1-fpm php8.1-gd php8.1-imap php8.1-intl \
-    php8.1-mbstring php8.1-mysql php8.1-mysqlnd php8.1-pgsql php8.1-pspell \
-    php8.1-soap php8.1-sqlite3 php8.1-tidy php8.1-xdebug php8.1-xml php8.1-xmlrpc php8.1-yaml php8.1-zip &>/dev/null
+apt-get -q=2 install php8.2 php-pear php8.2-cli libapache2-mod-php8.2 libphp8.2-embed \
+    php8.2-bcmath php8.2-bz2 php8.2-curl php8.2-fpm php8.2-gd php8.2-imap php8.2-intl \
+    php8.2-mbstring php8.2-mysql php8.2-mysqlnd php8.2-pgsql php8.2-pspell \
+    php8.2-soap php8.2-sqlite3 php8.2-tidy php8.2-xdebug php8.2-xml php8.2-xmlrpc php8.2-yaml php8.2-zip &>/dev/null
 a2dismod mpm_event &>/dev/null
 a2enmod mpm_prefork &>/dev/null
-a2enmod php8.1 &>/dev/null
+a2enmod php8.2 &>/dev/null
 cp /vagrant/config/php.ini.htaccess /var/www/.htaccess
 PHP_ERROR_REPORTING_INT=$(php -r 'echo '"$PHP_ERROR_REPORTING"';')
 sed -i 's|PHP_ERROR_REPORTING_INT|'$PHP_ERROR_REPORTING_INT'|' /var/www/.htaccess

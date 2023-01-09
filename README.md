@@ -3,7 +3,7 @@
 Make a Vagrant box with Debian 11 LAMP stack, plus configure it for development.
 
 - Host: Linux or Mac.
-- Guest: Debian 11, Apache 2.4, MariaDB 10.6, PHP 8.1, Python 3, Git 2.
+- Guest: Debian 11, Apache 2.4, MariaDB 10.6, PHP 8.2, Python 3.9, Git 2+.
 
 - Leave code and version control files physically outside the VM while virtually accessing them inside the VM.
 - Use any GUI tool (IDEs, browsers, database administration applications, Git clients) outside the VM to access code and data inside the VM.
@@ -24,7 +24,7 @@ In host machine terminal:
 
 ```bash
 mkdir -p ~/VM && cd $_
-git clone --depth 1 https://github.com/stemar/vagrant-debian-11.git debian-11
+git clone --depth=1 https://github.com/stemar/vagrant-debian-11.git debian-11
 cd ~/VM/debian-11
 vagrant up --provision
 vagrant ssh
@@ -56,7 +56,7 @@ vagrant ssh
     - Avoid writing a password a zillion times through development.
 - Adminer served at `http://localhost:8000/adminer.php`.
 - Development-specific `php.ini` settings from `.htaccess` for all local websites.
-- Python 3 installed.
+- Python 3.9 installed.
 
 ---
 
