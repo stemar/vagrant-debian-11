@@ -49,7 +49,7 @@ echo '==> Installing PHP'
 
 apt-get -q=2 install php8.2 php-pear php8.2-cli libapache2-mod-php8.2 libphp8.2-embed \
     php8.2-bcmath php8.2-bz2 php8.2-curl php8.2-fpm php8.2-gd php8.2-imap php8.2-intl \
-    php8.2-mbstring php8.2-mysql php8.2-mysqlnd php8.2-pgsql php8.2-pspell \
+    php8.2-mbstring php8.2-mysql php8.2-mysqlnd php8.2-pgsql php8.2-pspell php8.2-readline \
     php8.2-soap php8.2-sqlite3 php8.2-tidy php8.2-xdebug php8.2-xml php8.2-xmlrpc php8.2-yaml php8.2-zip &>/dev/null
 a2dismod mpm_event &>/dev/null
 a2enmod mpm_prefork &>/dev/null
