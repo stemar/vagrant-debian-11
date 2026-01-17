@@ -3,7 +3,7 @@
 Make a Vagrant box with Debian 11 LAMP stack, plus configure it for development.
 
 - Host: Linux or Mac.
-- Guest: Debian 11, Apache 2.4, MariaDB 10.6, PHP 8.2, Python 3.9, Git 2+.
+- Guest: Debian 11, Apache 2.4, MariaDB 10.6, PHP 8.2, Python 3.9, Git 2.x.
 
 - Leave code and version control files physically outside the VM while virtually accessing them inside the VM.
 - Use any GUI tool (IDEs, browsers, database administration applications, Git clients) outside the VM to access code and data inside the VM.

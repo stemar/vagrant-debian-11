@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.3 - 2026-01-16
+
+### Removed
+
+- Removed `:id` to all `:forwarded_ports` except ssh.
+
 ## 1.0.2 - 2026-01-13
 
 ### Changed

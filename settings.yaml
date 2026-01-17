@@ -11,11 +11,9 @@
   - :id: ssh
     :host: 2200
     :guest: 22
-  - :id: http
-    :host: 8000
+  - :host: 8000
     :guest: 80
-  - :id: mysql
-    :host: 33060
+  - :host: 33060
     :guest: 3306
 
 :synced_folder:
