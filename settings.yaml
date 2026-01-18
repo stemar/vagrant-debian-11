@@ -23,12 +23,12 @@
   :group: vagrant
 
 :copy_files:
-- :source: ~/.ssh
-  :destination: ~/.ssh
-- :source: ~/.gitconfig
-  :destination: ~/.gitconfig
-- :source: ~/.subversion
-  :destination: ~/.subversion
+  - :source: ~/.ssh
+    :destination: ~/.ssh
+  - :source: ~/.gitconfig
+    :destination: ~/.gitconfig
+  - :source: ~/.subversion
+    :destination: ~/.subversion
 
 :php_error_reporting: E_ALL & ~E_NOTICE & ~E_DEPRECATED
 ...
