@@ -75,6 +75,10 @@ cp /vagrant/config/adminer.conf /etc/apache2/conf-available/adminer.conf
 sed -i 's|HOST_HTTP_PORT|'$HOST_HTTP_PORT'|' /etc/apache2/conf-available/adminer.conf
 a2enconf adminer &>/dev/null
 
+echo '==> Installing Ruby & irb'
+
+apt-get -q=2 install ruby-full &>/dev/null
+
 echo '==> Testing Apache configuration'
 
 apache2ctl configtest
@@ -105,3 +109,4 @@ apache2 -v | head -n1 | cut -d ' ' -f 3
 mysql -V
 php -v | head -n1
 python3 --version
+ruby -v
