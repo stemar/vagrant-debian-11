@@ -55,9 +55,8 @@ apt-get -q=2 install php8.2 php-pear php8.2-cli libapache2-mod-php8.2 libphp8.2-
 a2dismod mpm_event &>/dev/null
 a2enmod mpm_prefork &>/dev/null
 a2enmod php8.2 &>/dev/null
-cp /vagrant/config/php.ini.htaccess /var/www/.htaccess
-PHP_ERROR_REPORTING_INT=$(php -r 'echo '"$PHP_ERROR_REPORTING"';')
-sed -i 's|PHP_ERROR_REPORTING_INT|'$PHP_ERROR_REPORTING_INT'|' /var/www/.htaccess
+sed -i 's|PHP_VERSION|8\.2|' /etc/apache2/sites-available/virtualhost.conf
+cp /vagrant/config/php.ini /var/www/php.ini
 
 echo '==> Installing Adminer'
 
