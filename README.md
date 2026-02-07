@@ -168,6 +168,7 @@ lsb_release -a
 sudo apache2 -v
 mysql -V
 php -v
+python3 --version
 svn --version
 git --version
 openssl version
