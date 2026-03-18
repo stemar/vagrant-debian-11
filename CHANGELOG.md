@@ -2,6 +2,10 @@
 
 ## 1.1.1 - 2026-03-18
 
+### Added
+
+- Chown `www-data` the `/var/lib/php/sessions` to allow Apache to write PHP sessions.
+
 ### Fixed
 
 - Moved `php.ini` to `config` directory.
