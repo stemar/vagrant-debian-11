@@ -4,7 +4,7 @@
 
 ### Added
 
-- Chown `www-data` the `/var/lib/php/sessions` to allow Apache to write PHP sessions.
+- Chown `www-data` the `/var/lib/php/sessions` in `provision.sh` to allow Apache to write PHP sessions.
 
 ### Fixed
 
