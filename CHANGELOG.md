@@ -4,7 +4,7 @@
 
 ### Fixed
 
-- Moved `php.ini` to config directory.
+- Moved `php.ini` to `config` directory.
 
 ## 1.1.0 - 2026-02-07
 
