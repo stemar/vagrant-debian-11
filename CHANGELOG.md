@@ -1,25 +1,31 @@
 # Changelog
 
+## 1.1.1 - 2026-03-18
+
+### Fixed
+
+- Moved `php.ini` to config directory.
+
 ## 1.1.0 - 2026-02-07
 
 ### Added
 
-- Added `config/php.ini` that will be located in `/var/www` to override Apache's `php.ini`
-- Added `PHPINIDir` and `SetEnv PHP_INI_SCAN_DIR` in `config/virtualhost.conf`
-- New `PHP_VERSION` is handled in `provision.sh`
+- Added `config/php.ini` that will be located in `/var/www` to override Apache's `php.ini`.
+- Added `PHPINIDir` and `SetEnv PHP_INI_SCAN_DIR` in `config/virtualhost.conf`.
+- New `PHP_VERSION` is handled in `provision.sh`.
 
 ### Changed
 
-- Modified alias `ll` in `config/bash_aliases`
-- Updated `README.md`
+- Modified alias `ll` in `config/bash_aliases`.
+- Updated `README.md`.
 
 ### Removed
 
-- Deleted `config/php.ini.htaccess`
-    - `.htaccess` is no longer used to override Apache's `php.ini`
-- Removed `:php_error_reporting` from `settings.yaml`
-- Removed `PHP_ERROR_REPORTING` from `Vagrantfile`
-- Removed `PHP_ERROR_REPORTING_INT` and its handling from `provision.sh`
+- Deleted `config/php.ini.htaccess`.
+    - `.htaccess` is no longer used to override Apache's `php.ini`.
+- Removed `:php_error_reporting` from `settings.yaml`.
+- Removed `PHP_ERROR_REPORTING` from `Vagrantfile`.
+- Removed `PHP_ERROR_REPORTING_INT` and its handling from `provision.sh`.
 
 ## 1.0.4 - 2026-01-19
 
@@ -55,15 +61,15 @@
 
 ### Added
 
-- Added `CHANGELOG.md`
+- Added `CHANGELOG.md`.
 
 ### Changed
 
-- Updated `README.md`
+- Updated `README.md`.
 
 ### Fixed
 
-- Updated Adminer to version 5+ plugin code and files
+- Updated Adminer to version 5+ plugin code and files.
 
 ## 1.0.0 - 2022-04-29
 
